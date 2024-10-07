@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.my-profile {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+
+.section-title {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.progress-bar {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+
+.service-item {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.freelance {
+  animation: fadeIn 1s ease-in-out;
+}
